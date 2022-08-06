@@ -290,7 +290,7 @@
 					"$(SRCROOT)/../external/SOIL/lib/mac",
 				);
 				OTHER_LDFLAGS = (
-					"-lGLEW.2.1.0",
+					"-lGLEW.2.2.0",
 					"-lSDL2-2.0.0",
 					"-lSDL2_mixer-2.0.0",
 					"-lSDL2_ttf-2.0.0",
@@ -320,7 +320,7 @@
 					"$(SRCROOT)/../external/SOIL/lib/mac",
 				);
 				OTHER_LDFLAGS = (
-					"-lGLEW.2.1.0",
+					"-lGLEW.2.2.0",
 					"-lSDL2-2.0.0",
 					"-lSDL2_mixer-2.0.0",
 					"-lSDL2_ttf-2.0.0",
