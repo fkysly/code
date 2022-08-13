@@ -6,9 +6,12 @@
 //  Copyright © 2022 Sanjay Madhav. All rights reserved.
 //
 
-#ifndef Ship_hpp
-#define Ship_hpp
+#pragma once
 
-#include <stdio.h>
+    class Ship:  {
+public:
+    Ship();
+    ~Ship();
 
-#endif /* Ship_hpp */
+private:
+};

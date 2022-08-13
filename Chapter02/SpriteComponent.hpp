@@ -6,9 +6,38 @@
 //  Copyright © 2022 Sanjay Madhav. All rights reserved.
 //
 
-#ifndef SpriteComponent_hpp
-#define SpriteComponent_hpp
+#pragma once
 
-#include <stdio.h>
+#include "SDL/SDL.h"
+#include "Component.hpp"
 
-#endif /* SpriteComponent_hpp */
+class Actor;
+
+class SpriteComponent : public Component {
+public:
+    SpriteComponent(Actor *owner, int drawOrder);
+
+    ~SpriteComponent();
+
+    virtual void Draw(SDL_Renderer* renderer);
+
+    virtual void SetTexture(SDL_Texture *texture);
+
+    int GetDrawOrder() const {
+        return mDrawOrder;
+    };
+
+    int GetTexWidth() const {
+        return mTexWidth;
+    };
+
+    int GetTextHeight() const {
+        return mTexHeight;
+    };
+
+protected:
+    SDL_Texture *mTexture;
+    int mTexWidth;
+    int mTexHeight;
+    int mDrawOrder;
+};

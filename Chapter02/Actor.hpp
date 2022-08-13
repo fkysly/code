@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "math.h"
+
 class Game;
 class Component;
 
@@ -18,4 +20,18 @@ public:
     
     void AddComponent(Component* component);
     void RemoveComponent(Component* component);
+    Game* GetGame();
+    const Vector2& GetPosition() const {
+        return mPosition;};
+    void SetPosition(const Vector2& position) {mPosition = position;};
+    float GetScale() const {return mScale;};
+    void SetScale(float scale) {mScale = scale;};
+    float GetRotation() const {return mRotation;};
+    void SetRotation(float rotation) {mRotation = rotation;};
+
+private:
+    Game* mGame;
+    Vector2 mPosition;
+    float mScale;
+    float mRotation;
 };

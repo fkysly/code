@@ -7,7 +7,8 @@
 //
 
 #include "Game.h"
-#include "SDL/SDL_image.h"
+#include "Actor.hpp"
+#include "SpriteComponent.hpp"
 
 Game::Game()
     :mWindow(nullptr)
@@ -15,7 +16,6 @@ Game::Game()
     ,mIsRunning(true)
     ,mTicksCount(0)
 {
-    
 }
 
 bool Game::Initialize() {
@@ -72,6 +72,8 @@ void Game::ProcessInput() {
             case SDL_QUIT:
                 mIsRunning = false;
                 break;
+            default:
+                break;
         }
     }
     
@@ -100,4 +102,20 @@ void Game::GenerateOutput() {
     
     
     SDL_RenderPresent(mRenderer);
+}
+
+void Game::AddActor(Actor *actor) {
+
+}
+
+void Game::RemoveActor(Actor *actor) {
+
+}
+
+void Game::AddSprite(Sprite *sprite) {
+
+}
+
+void Game::RemoveSprite(Sprite *sprite) {
+
 }

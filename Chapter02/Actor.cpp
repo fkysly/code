@@ -10,7 +10,7 @@
 #include "Game.h"
 #include "Component.hpp"
 
-Actor::Actor(Game* game) {
+Actor::Actor(Game* game):mGame(game) {
     
 }
 
@@ -26,4 +26,8 @@ void Actor::AddComponent(Component *component) {
 
 void Actor::RemoveComponent(Component *component) {
 
+}
+
+Game *Actor::GetGame() {
+    return mGame;
 }

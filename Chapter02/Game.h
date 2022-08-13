@@ -9,6 +9,8 @@
 #pragma once
 #include "SDL/SDL.h"
 
+class Actor;
+class SpriteComponent;
 
 class Game {
 public:
@@ -16,6 +18,12 @@ public:
     bool Initialize();
     void RunLoop();
     void Shutdown();
+
+    void AddActor(Actor* actor);
+    void RemoveActor(Actor* actor);
+    void AddSprite(SpriteComponent* sprite);
+    void RemoveSprite(SpriteComponent* sprite);
+
 private:
     void ProcessInput();
     void UpdateGame();

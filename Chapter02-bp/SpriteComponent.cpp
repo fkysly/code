@@ -26,7 +26,7 @@ SpriteComponent::~SpriteComponent()
 }
 
 void SpriteComponent::Draw(SDL_Renderer* renderer)
-{
+{n
 	if (mTexture)
 	{
 		SDL_Rect r;
