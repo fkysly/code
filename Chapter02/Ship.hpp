@@ -8,7 +8,9 @@
 
 #pragma once
 
-    class Ship:  {
+#include "SpriteComponent.hpp"
+
+class Ship: public SpriteComponent {
 public:
     Ship();
     ~Ship();

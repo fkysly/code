@@ -112,10 +112,10 @@ void Game::RemoveActor(Actor *actor) {
 
 }
 
-void Game::AddSprite(Sprite *sprite) {
+void Game::AddSprite(SpriteComponent *sprite) {
 
 }
 
-void Game::RemoveSprite(Sprite *sprite) {
+void Game::RemoveSprite(SpriteComponent *sprite) {
 
 }
